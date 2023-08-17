@@ -1,11 +1,11 @@
 ---
 layout: member
-title: "This could be you"
+title: "Yug Saraswat"
 category: member
-position: 
-nickname: new
-handle: 
-email: 
+position: Graduate Student
+nickname: Yug
+handle: Yug
+email: ysarasw@ncsu.du
 twitter: 
 github: 
 scholar: 

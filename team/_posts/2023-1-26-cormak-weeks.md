@@ -4,7 +4,7 @@ title: "Cormak Weeks"
 category: member
 position: Graduate Student
 nickname: Cormak
-email: 
+email: clweeks@ncsu.edu
 twitter: 
 github: 
 scholar: 

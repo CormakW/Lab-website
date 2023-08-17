@@ -1,11 +1,11 @@
 ---
 layout: member
-title: "This could be you"
+title: "Palav Jani"
 category: member
-position: 
-nickname: new
-handle: 
-email: 
+position: Ph.D. Student in Chemical Engeering (co-advised with Saad Khan)
+nickname: Palav
+handle: Palav
+email: pkjani@ncsu.edu
 twitter: 
 github: 
 scholar: 

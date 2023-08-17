@@ -1,11 +1,11 @@
 ---
 layout: member
-title: "This could be you"
+title: "Rony Waheibi"
 category: member
-position: 
-nickname: new
-handle: 
-email: 
+position: Ph.D. Student in Materials Science & Engineering
+nickname: Rony
+handle: rony
+email: rawaheibi@ncsu.edu
 twitter: 
 github: 
 scholar: 

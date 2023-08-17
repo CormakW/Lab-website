@@ -1,11 +1,11 @@
 ---
 layout: member
-title: "This could be you"
+title: "Riley Dowdy-Green"
 category: member
-position: 
-nickname: new
-handle: 
-email: 
+position: Ph.D. Student in Chemical Engineering
+nickname: Riley
+handle: riley
+email: redowdyg@ncsu.edu
 twitter: 
 github: 
 scholar: 
