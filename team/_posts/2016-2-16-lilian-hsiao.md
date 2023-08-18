@@ -6,9 +6,9 @@ position: Principal Investigator
 nickname: Lilian
 handle: lilian
 email: lilian_hsiao@ncsu.edu
-twitter: WadhwaLab
+twitter: 
 scholar: zf6SNQEAAAAJ&hl=en&oi=ao
-image: /assets/images/team/navish.jpg
+image: /assets/images/team/lilian-hsiao.jpg
 cv: /assets/pdfs/wadhwa-cv.pdf
 alum: false
 ---
