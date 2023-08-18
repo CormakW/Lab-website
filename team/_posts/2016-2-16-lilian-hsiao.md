@@ -8,7 +8,7 @@ handle: lilian
 email: lilian_hsiao@ncsu.edu
 twitter: 
 scholar: zf6SNQEAAAAJ&hl=en&oi=ao
-image: /assets/images/team/lilian-hsiao.jpg
+image: /assets/images/team/hsiao_lilian.jpg
 cv: /assets/pdfs/wadhwa-cv.pdf
 alum: false
 ---
