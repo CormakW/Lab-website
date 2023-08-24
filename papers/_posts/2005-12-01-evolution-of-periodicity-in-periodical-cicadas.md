@@ -10,6 +10,7 @@ issue: 12
 pages: 3200-3211
 authors: "Nicolas Lehmann-Ziebarth, Paul P. Heideman, Rebecca A. Shapiro, Sonia L. Stoddart, Chien Ching, Lilian Hsiao, Gordon R. Stephenson, Paul A. Milewski, Anthony R. Ives"
 image:
+subcategories: gel
 fulltext: https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/04-1615
 pdf: 
 pdflink: https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1890/04-1615
