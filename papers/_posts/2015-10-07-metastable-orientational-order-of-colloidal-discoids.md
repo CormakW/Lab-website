@@ -20,7 +20,7 @@ f1000:
 figshare: 
 doi: 10.1038/ncomms9507
 category: paper
-subcategories: [gel,fluid]
+subcategories: [gel, fluid]
 published: true
 peerreview: true
 review: false
