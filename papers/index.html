@@ -6,9 +6,9 @@ group: navigation
 navorder: 4
 ---
 {% include JB/setup %}
-<div class="bigspacer"></div> 
+<div class="bigspacer"></div>
 <p>Click on the papers for abstract and links to pdf/fulltext.<br></p>
-<div class="bigspacer"></div> 
+<div class="bigspacer"></div>
 {% assign memberindex = 0 %}
 {% for paper in site.categories.papers %}
   {% assign memberindex = memberindex | plus: 1 %}
@@ -17,82 +17,34 @@ navorder: 4
   <div class="row">
   {% endif %}
     <div class="col-md-4 paperbox">
-      {% if paper.embargo %}
       <div class="media">
-          <div class="media-body">
-            <div class="smallhead media-heading">
-            {{ paper.title }}
-            </div>
-            <p class="shortref">{{ paper.shortref }}</p>
-            <!-- Display subcategories -->
-            <p class="subcategories">
-              Subcategories:
-              {% for subcategory in paper.category %}
-                {% if subcategory != 'paper' %}
-                  <span class="subcategory">{{ subcategory }}</span>
-                {% endif %}
-              {% endfor %}
-            </p>
-            <!-- Display research areas -->
-            <p class="research-areas">
-              Research Areas:
-              {% for tag in paper.tags %}
-                <span class="research-area">{{ tag }}</span>
-              {% endfor %}
-            </p>
+        <div class="media-body">
+          <div class="smallhead media-heading">
+            {% if paper.preprint %}
+              <a href="{{ paper.url }}" class="off">PREPRINT: {{ paper.title }}</a>
+            {% else %}
+              <a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+            {% endif %}
           </div>
-      </div>
-      {% elsif paper.preprint %}
-      <div class="media">
-        <div class="media-body">
-            <div class="smallhead media-heading">
-            <a href="{{ paper.url }}" class="off">PREPRINT: {{ paper.title }}</a>
-            </div>
-            <p class="shortref">{{ paper.shortref }}</p>
-            <!-- Display subcategories -->
-            <p class="subcategories">
-              Subcategories:
-              {% for subcategory in paper.category %}
-                {% if subcategory != 'paper' %}
-                  <span class="subcategory">{{ subcategory }}</span>
-                {% endif %}
-              {% endfor %}
-            </p>
-            <!-- Display research areas -->
-            <p class="research-areas">
-              Research Areas:
-              {% for tag in paper.tags %}
-                <span class="research-area">{{ tag }}</span>
-              {% endfor %}
-            </p>
+          <p class="shortref">{{ paper.shortref }}</p>
+          <!-- Display subcategories -->
+          <p class="subcategories">
+            Subcategories:
+            {% for subcategory in paper.category %}
+              {% if subcategory != 'paper' %}
+                <span class="subcategory">{{ subcategory }}</span>
+              {% endif %}
+            {% endfor %}
+          </p>
+          <!-- Display research areas -->
+          <p class="research-areas">
+            Research Areas:
+            {% for tag in paper.tags %}
+              <span class="research-area">{{ tag }}</span>
+            {% endfor %}
+          </p>
         </div>
       </div>
-      {% else %}
-      <div class="media">
-        <div class="media-body">
-            <div class="smallhead media-heading">
-            <a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
-            </div>
-            <p class="shortref">{{ paper.shortref }}</p>
-            <!-- Display subcategories -->
-            <p class="subcategories">
-              Subcategories:
-              {% for subcategory in paper.category %}
-                {% if subcategory != 'paper' %}
-                  <span class="subcategory">{{ subcategory }}</span>
-                {% endif %}
-              {% endfor %}
-            </p>
-            <!-- Display research areas -->
-            <p class="research-areas">
-              Research Areas:
-              {% for tag in paper.tags %}
-                <span class="research-area">{{ tag }}</span>
-              {% endfor %}
-            </p>
-        </div>
-      </div>
-      {% endif %}
     </div>
   {% if colindex == 0 %} <!-- closing a row -->
   </div><div class="bigspacer"></div>
