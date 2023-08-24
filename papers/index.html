@@ -30,10 +30,8 @@ navorder: 4
           <!-- Display subcategories -->
           <p class="subcategories">
             Subcategories:
-            {% for subcategory in paper.category %}
-              {% if category != 'paper' %}
+            {% for subcategory in paper.subcategories %}
                 <span class="subcategories">{{ subcategories }}</span>
-              {% endif %}
             {% endfor %}
           </p>
           <!-- Display research areas -->
