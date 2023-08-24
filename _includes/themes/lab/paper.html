@@ -1,15 +1,13 @@
-{% assign total_papers = site.categories.papers | size %}
 <div class="bigspacer"></div>
-{% for paper in site.categories.papers reversed %}
+{% for paper in site.categories.papers %}
   <div class="row">
     <div class="col-md-12 paperbox">
       <div class="media">
         <div class="media-body">
           <div class="smallhead media-heading">
-            <p>Publication #{{ total_papers }}</p>
+            <p>{{ paper.title }}</p>
           </div>
           <p class="authors">{{ paper.authors }}</p>
-          <p class="title">{{ paper.title }}</p>
           <p class="journal">
             {{ paper.journal }}{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.issue %} ({{ paper.issue }}){% endif %}{% if paper.pages %}: {{ paper.pages }}{% endif %} ({{ paper.year }}).
           </p>
@@ -19,5 +17,4 @@
     </div>
   </div>
   <div class="bigspacer"></div>
-  {% assign total_papers = total_papers | minus: 1 %}
 {% endfor %}
