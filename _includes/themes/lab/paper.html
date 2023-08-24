@@ -1,3 +1,7 @@
+
+
+<div class="bigspacer"></div>
+
 <div class="row">
 	<div class="col-md-3">
 		<div class="media">
@@ -39,9 +43,12 @@
 	</div>
 </div>
 
+<div class="bigspacer"></div>
+
 <div class="row">
 	<div class="col-md-3">
-		<div class="glyphbox note">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note"> <!-- DAD: what is this class? -->
 			{% if page.pdf or page.pdflink or page.fulltext %}
 			<div class="smallhead subtle">
 				Full text
@@ -70,7 +77,7 @@
 				<a class="off" href="{{ page.fulltext }}" target="_blank">Journal HTML</a>
 				{% endif %}
 				{% endif %}
-			</div>
+      </div>
 			{% endif %}
 
 			{% if page.supplement %}
@@ -81,7 +88,7 @@
 				<div class="smallspacer"></div>
 				<i class="fa fa-paperclip fa-fw"></i>
 				<a class="off" href="{{ page.supplement }}" target="_blank">{{ page.supplement | split: '/' | last }}</a>
-			</div>
+			</div>		
 			{% endif %}
 
 			{% if page.pmid %}
@@ -92,7 +99,7 @@
 				<div class="smallspacer"></div>
 				<i class="fa fa-external-link fa-fw"></i>
 				<a class="off" href="http://www.ncbi.nlm.nih.gov/pubmed/{{ page.pmid }}" target="_blank">{{ page.pmid }}</a>
-			</div>
+			</div>			
 			{% endif %}
 						
 			{% if page.doi %}
@@ -103,7 +110,7 @@
 				<div class="smallspacer"></div>
 				<i class="fa fa-external-link fa-fw"></i>
 				<a class="off" href="http://dx.doi.org/{{ page.doi }}" target="_blank">{{ page.doi }}</a>
-			</div>
+			</div>			
 			{% endif %}
 			
 			{% if page.github %}
@@ -124,7 +131,7 @@
 				<div class="smallspacer"></div>
 				<i class="fa fa-database fa-fw"></i>
 				<a class="off" href="http://dx.doi.org/{{ page.dryad_doi }}" target="_blank">Dryad</a>
-			</div>
+			</div>		
 			{% endif %}
 			{% if page.figshare_doi %}
 			<div class="smallhead subtle">
@@ -134,7 +141,7 @@
 				<div class="smallspacer"></div>
 				<i class="fa fa-database fa-fw"></i>
 				<a class="off" href="http://doi.org/{{ page.figshare_doi }}" target="_blank">Figshare</a>
-			</div>
+			</div>		
 			{% endif %}
 			{% if page.altmetric_id %}
 			<div class="smallhead subtle">
@@ -142,8 +149,12 @@
 			</div>	
 			<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 			<div class="altmetric-embed" data-badge-popover="right" data-doi={{ page.doi }} data-badge-type="donut" data-altmetric-id={{ page.altmetric_id }} data-hide-no-mentions="true">
-			</div>
+			</div>			
 			{% endif %}
+			<!-- <div class="smallhead subtle">
+				Share
+			</div> -->
+		    <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
 		    <div class="post-sharing">
 		     {% include JB/sharing %}
 		    </div>
@@ -166,3 +177,5 @@
 
 	<div class="col-md-1"></div>
 </div>
+
+<div class="bigspacer"></div>
