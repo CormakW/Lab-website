@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "A model colloidal gel for coordinated measurements of force, structure, and rheology"
-year: "2014"
+year: "2015"
 shortref: "Hsiao et al. <i> Journal of Rheology</i> 2014"
 nickname: non-coelescence-oblique-jets
 journal: " Journal of Rheology"
