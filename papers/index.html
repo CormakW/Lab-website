@@ -31,8 +31,8 @@ navorder: 4
           <p class="subcategories">
             Subcategories:
             {% for subcategory in paper.category %}
-              {% if subcategory != 'paper' %}
-                <span class="subcategory">{{ subcategory }}</span>
+              {% if category != 'paper' %}
+                <span class="subcategories">{{ subcategories }}</span>
               {% endif %}
             {% endfor %}
           </p>
