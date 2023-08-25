@@ -5,7 +5,7 @@ year: "2015"
 shortref: "Hsiao and Doyle, <i>Soft MAtter</i> 2015"
 nickname: phase-thermoresponsive-nanoemulsions
 journal: "Soft Matter"
-volume: 11
+volume: 12
 issue: 
 pages: 8426-8431
 authors: "Lilian C. Hsiao and Patrick S. Doyle"
