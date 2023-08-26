@@ -1,16 +1,16 @@
 ---
 layout: member
 title: "Cormak Weeks"
-category: member
-position: Graduate Student
+category: Graduate Student
+position: PhD Student (Coadvised with Dr. Wentao Tang)
 nickname: Cormak
 email: clweeks@ncsu.edu
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image: /assets/images/team/cormak.png
 cv: 
 alum: false
 ---
 
-We are currently recruiting motivated, creative, and curiosity-driven scientists to join our growing team. Visit [this page](/join) to get started.
+Currently Working on AI assisted control of 3D printed hydrogels 

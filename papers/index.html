@@ -6,49 +6,54 @@ group: navigation
 navorder: 4
 ---
 {% include JB/setup %}
-<div class="bigspacer"></div>
+<style>
+  .authors {
+    margin-bottom: 0px; /* Adjust the spacing between authors and research area */
+    line-height: 20px;
+    font-style: italic; /* Italicize the authors for differentiation */
+  }
+  .research-areas {
+    margin-top: -1px; /* Adjust the spacing between authors and research area */
+  }
+</style>
 <p>Click on the papers for abstract and links to pdf/fulltext.<br></p>
-<div class="bigspacer"></div>
-{% assign memberindex = 0 %}
-{% for paper in site.categories.papers %}
-  {% assign memberindex = memberindex | plus: 1 %}
+{% assign total_papers = site.categories.papers | size %}
+{% assign memberindex = total_papers %}
+{% for paper in site.categories.papers reversed %}
   {% assign colindex = memberindex | modulo: 1 %}
-  {% if colindex == 0 %} <!-- opening of a new row -->
-  <div class="row">
+  {% if colindex == 0 %}
+    <!-- opening of a new row -->
+    <div class="row">
   {% endif %}
     <div class="col-md-4 paperbox">
       <div class="media">
         <div class="media-body">
           <div class="smallhead media-heading">
             {% if paper.preprint %}
-              <a href="{{ paper.url }}" class="off">PREPRINT: {{ paper.title }}</a>
+              <a href="{{ paper.pdflink }}" class="off">PREPRINT: {{ memberindex }}. {{ paper.title }}</a>
             {% else %}
-              <a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+              <a href="{{ paper.pdflink }}" class="off">{{ memberindex }}. {{ paper.title }}</a>
             {% endif %}
+            <br> <!-- Add a line break here to create space after the title -->
           </div>
           <p class="authors">{{ paper.authors }}</p>
-          <!-- Display subcategories -->
-          <p class="subcategories">
-            Subcategories:
-            {% for subcategories in paper.subcategories %}
-                <span class="subcategories">{{ subcategories }}</span>
-            {% endfor %}
-          </p>
           <!-- Display research areas -->
           <p class="research-areas">
             Research Areas:
             {% for tag in paper.tags %}
-              <span class="research-area">{{ tag }}</span>
+              <span class="research-area">{{ tag }}{% unless forloop.last %}, {% endunless %}</span>
             {% endfor %}
           </p>
         </div>
       </div>
     </div>
-  {% if colindex == 0 %} <!-- closing a row -->
-</div><div class="bigspacer"></div>
+  {% if colindex == 0 %}
+    <!-- closing a row -->
+    </div>
   {% endif %}
+  {% assign memberindex = memberindex | minus: 1 %}
 {% endfor %}
-{% if colindex != 0 %} <!-- close last open row -->
-</div><div class="bigspacer"></div>
+{% if colindex != 0 %}
+  <!-- close last open row -->
+</div>
 {% endif %}
-<div class="bigspacer"></div>

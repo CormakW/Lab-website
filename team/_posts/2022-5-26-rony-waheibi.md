@@ -1,16 +1,16 @@
 ---
 layout: member
-title: "Rony Waheibi"
-category: member
-position: Ph.D. Student in Materials Science & Engineering
-nickname: Rony
-handle: rony
-email: rawaheibi@ncsu.edu
-twitter: 
-github: 
-scholar: 
-image: /assets/images/team/new.jpg
-cv: 
+title: Rony Waheibi
+category: Graduate Student
+position: PhD Canidate Chemical and Biomolecular Engineering
+nickname:
+handle: 
+email: rawaheib@ncsu.edu
+twitter:
+github: RonyWaheibi
+scholar:
+image: /assets/images/team/rony.jpg 
+cv:
 alum: false
 ---
 

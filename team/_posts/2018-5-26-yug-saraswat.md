@@ -1,15 +1,15 @@
 ---
 layout: member
 title: "Yug Saraswat"
-category: member
-position: Graduate Student
+category: Graduate Student
+position: PhD Canidate Chemical and Biomolecular Engineering
 nickname: Yug
 handle: Yug
 email: ysarasw@ncsu.du
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image: /assets/images/team/yug.jpg
 cv: 
 alum: false
 ---
