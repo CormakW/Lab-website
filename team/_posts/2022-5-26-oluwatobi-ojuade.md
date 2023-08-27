@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "This could be you"
-category: member
-position: 
+title: "Oluwatobi Ojuade"
+category: Graduate Student
+position: Ph.D. in Chemical engineering
 nickname: new
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image: /assets/images/team/tobi.jpg
 cv: 
 alum: false
 ---

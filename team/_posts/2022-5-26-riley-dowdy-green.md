@@ -1,7 +1,7 @@
 ---
 layout: member
 title: "Riley Dowdy-Green"
-category: member
+category: Graduate Student
 position: Ph.D. Student in Chemical Engineering
 nickname: Riley
 handle: riley
@@ -9,7 +9,7 @@ email: redowdyg@ncsu.edu
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image: /assets/images/team/riley.jpg
 cv: 
 alum: false
 ---

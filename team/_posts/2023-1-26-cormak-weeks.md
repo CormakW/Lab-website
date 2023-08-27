@@ -2,13 +2,13 @@
 layout: member
 title: "Cormak Weeks"
 category: Graduate Student
-position: PhD Student (Coadvised with Dr. Wentao Tang)
+position: Ph.D. Student in Chemical Engineering
 nickname: Cormak
 email: clweeks@ncsu.edu
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/cormak.png
+image: /assets/images/team/cormak.jpg
 cv: 
 alum: false
 ---

@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "This could be you"
-category: member
-position: 
-nickname: new
+title: "Shourie Yerabati"
+category: Graduate Student
+position: Ph.D. Student in Chemical Engineering
+nickname: Shourie
 handle: 
-email: 
+email: syeraba@ncsu.edu
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image: /assets/images/team/shourie.jpg
 cv: 
 alum: false
 ---

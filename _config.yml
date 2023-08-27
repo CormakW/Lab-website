@@ -13,11 +13,11 @@ repository: navishwadhwa/navishwadhwa.github.io
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : WADHWA LAB
-tagline: Mechanobiology of bacteria
+title : Hsiao Lab
+tagline: Complex Interfaces
 institution:
   url: https://www.ncsu.edu/
-  name: Arizona State University
+  name: North Carolina State
 department:
   url: https://cbe.ncsu.edu/
   name: Department Chemical and Biomolecular Engineering

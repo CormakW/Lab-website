@@ -8,18 +8,18 @@ navorder: 4
 {% include JB/setup %}
 <style>
   .authors {
-    margin-bottom: 0px; /* Adjust the spacing between authors and research area */
+    margin-bottom: 0px;
     line-height: 20px;
-    font-style: italic; /* Italicize the authors for differentiation */
+    font-style: italic;
   }
   .research-areas {
-    margin-top: -1px; /* Adjust the spacing between authors and research area */
+    margin-top: -1px;
   }
 </style>
 <p>Click on the papers for abstract and links to pdf/fulltext.<br></p>
 {% assign total_papers = site.categories.papers | size %}
-{% assign memberindex = total_papers %}
-{% for paper in site.categories.papers reversed %}
+{% assign memberindex = total_papers %} <!-- Start with the total number of papers for numbering -->
+{% for paper in site.categories.papers %}
   {% assign colindex = memberindex | modulo: 1 %}
   {% if colindex == 0 %}
     <!-- opening of a new row -->
@@ -34,7 +34,7 @@ navorder: 4
             {% else %}
               <a href="{{ paper.pdflink }}" class="off">{{ memberindex }}. {{ paper.title }}</a>
             {% endif %}
-            <br> <!-- Add a line break here to create space after the title -->
+            <br>
           </div>
           <p class="authors">{{ paper.authors }}</p>
           <!-- Display research areas -->

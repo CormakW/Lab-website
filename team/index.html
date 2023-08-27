@@ -11,104 +11,95 @@ permalink: /team/
 
 {% include JB/setup %}
 
-<!-- Commented out parts for lab page (alumni/group picture). Uncomment if needed -->
-<!--
-<div class="row">
-	<div class="col-md-12">
-		<img class="team-photo" src="/assets/images/team/drummond-lab-20190920.jpg"/>
-	</div>
-</div>
--->
-
-{% assign sorted_members = site.categories.team | sort: "category" | sort: "alum" %}
-
-<div class="bigspacer"></div>
 <!-- Principal Investigator Section -->
 <div class="title subtle">Principal Investigator</div>
-<div class="bigspacer"></div>
+{% assign sorted_members = site.categories.team | sort: "category" %}
 {% for member in sorted_members %}
-	{% if member.alum == false and member.category == "Principal Investigator" %}
-		<div class="row">
-			<div class="col-md-4 memberbox">
-				<div class="media">
-					<a class="pull-left" href="{{ member.url }}">
-						<img class="media-object member-photo" src="{{ member.image }}">
-					</a>
-					<div class="media-body">
-						<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-						<p class="note">{{ member.position }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	{% endif %}
+  {% if member.alum == false and member.category == "Principal Investigator" %}
+    <div class="row">
+      <div class="col-md-12 memberbox">
+        <div class="media">
+          <a class="pull-left" href="{{ member.url }}">
+            <img class="media-object member-photo" src="{{ member.image }}">
+          </a>
+          <div class="media-body">
+            <div class="head media-heading member-name">{{ member.title }}</div>
+            <p class="note">{{ member.position }}</p>
+            <!-- Display awards and honors -->
+            <p class="note">Awards and Honors:</p>
+            <ul>
+              {% for award in member.awards %}
+                <li style="list-style-type: none;">{{ award }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bigspacer"></div>
+  {% endif %}
 {% endfor %}
 
-<div class="bigspacer"></div>
 <!-- Graduate Students Section -->
 <div class="title subtle">Graduate Students</div>
-<div class="bigspacer"></div>
 {% for member in sorted_members %}
-	{% if member.alum == false and member.category == "Graduate Student" %}
-		<div class="row">
-			<div class="col-md-4 memberbox">
-				<div class="media">
-					<a class="pull-left" href="{{ member.url }}">
-						<img class="media-object member-photo" src="{{ member.image }}">
-					</a>
-					<div class="media-body">
-						<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-						<p class="note">{{ member.position }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	{% endif %}
+  {% if member.alum == false and member.category == "Graduate Student" %}
+    <div class="row">
+      <div class="col-md-12 memberbox">
+        <div class="media">
+          <a class="pull-left" href="{{ member.url }}">
+            <img class="media-object member-photo" src="{{ member.image }}">
+          </a>
+          <div class="media-body">
+            <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bigspacer"></div>
+  {% endif %}
 {% endfor %}
 
-<div class="bigspacer"></div>
 <!-- Undergraduate Students Section -->
 <div class="title subtle">Undergraduate Students</div>
-<div class="bigspacer"></div>
 {% for member in sorted_members %}
-	{% if member.alum == false and member.category == "Undergraduate" %}
-		<div class="row">
-			<div class="col-md-4 memberbox">
-				<div class="media">
-					<a class="pull-left" href="{{ member.url }}">
-						<img class="media-object member-photo" src="{{ member.image }}">
-					</a>
-					<div class="media-body">
-						<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-						<p class="note">{{ member.position }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	{% endif %}
+  {% if member.alum == false and member.category == "Undergraduate" %}
+    <div class="row">
+      <div class="col-md-12 memberbox">
+        <div class="media">
+          <a class="pull-left" href="{{ member.url }}">
+            <img class="media-object member-photo" src="{{ member.image }}">
+          </a>
+          <div class="media-body">
+            <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bigspacer"></div>
+  {% endif %}
 {% endfor %}
 
-<div class="bigspacer"></div>
-<hr/>
-
+<!-- Alumni Section -->
 <div class="bigspacer"></div>
 <hr/>
 <div class="bigtitle text-center">Alumni</div>
 <div class="bigspacer"></div>
 {% for member in sorted_members %}
-	{% if member.alum == true %}
-		<div class="row">
-			<div class="col-md-4 memberbox">
-				<div class="media">
-					<a class="pull-left" href="{{ member.url }}">
-						<img class="media-object member-photo" src="{{ member.image }}">
-					</a>
-					<div class="media-body">
-						<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-						<p class="note">{{ member.position }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	{% endif %}
+  {% if member.alum == true %}
+    <div class="row">
+      <div class="col-md-12 memberbox">
+        <div class="media">
+          <!-- Remove the link from alumni -->
+          <img class="media-object member-photo" src="{{ member.image }}">
+          <div class="media-body">
+            <div class="head media-heading member-name">{{ member.title }}</div>
+            <p class="note">{{ member.position }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}

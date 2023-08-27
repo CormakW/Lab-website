@@ -1,17 +1,15 @@
 ---
 layout: member
-title: "This could be you"
+title: "Shivani Sutrave"
 category: member
-position: 
-nickname: new
+position: Master student
+nickname: Shivani
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: /assets/images/team/new.jpg
+image:
 cv: 
-alum: false
+alum: true
 ---
-
-We are currently recruiting motivated, creative, and curiosity-driven scientists to join our growing team. Visit [this page](/join) to get started.
