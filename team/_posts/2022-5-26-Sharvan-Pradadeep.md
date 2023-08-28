@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "Ashika Verma"
+title: "Shravan Pradeep"
 category: member
-position: 
-nickname: new
+position: Postdoc, UPenn, Doug Jerolmack & Paulo Arratia
+nickname:
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: 
+image:
 cv: 
 alum: true
 ---

@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "Ashika Verma"
+title: "Alan Jacob"
 category: member
-position: 
-nickname: new
+position: Assistant Professor, IIT Hyderabad
+nickname:
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: 
+image:
 cv: 
 alum: true
 ---

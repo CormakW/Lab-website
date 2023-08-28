@@ -12,7 +12,9 @@ permalink: /team/
 {% include JB/setup %}
 
 <!-- Principal Investigator Section -->
-<div class="title subtle">Principal Investigator</div>
+<div class="bigspacer"></div>
+<div class="title">Principal Investigator</div>
+<div class="bigspacer"></div>
 {% assign sorted_members = site.categories.team | sort: "category" %}
 {% for member in sorted_members %}
   {% if member.alum == false and member.category == "Principal Investigator" %}
@@ -41,7 +43,9 @@ permalink: /team/
 {% endfor %}
 
 <!-- Graduate Students Section -->
+<div class="bigspacer"></div>
 <div class="title subtle">Graduate Students</div>
+<div class="bigspacer"></div>
 {% for member in sorted_members %}
   {% if member.alum == false and member.category == "Graduate Student" %}
     <div class="row">
@@ -62,7 +66,9 @@ permalink: /team/
 {% endfor %}
 
 <!-- Undergraduate Students Section -->
+<div class="bigspacer"></div>
 <div class="title subtle">Undergraduate Students</div>
+<div class="bigspacer"></div>
 {% for member in sorted_members %}
   {% if member.alum == false and member.category == "Undergraduate" %}
     <div class="row">
@@ -88,18 +94,15 @@ permalink: /team/
 <div class="bigtitle text-center">Alumni</div>
 <div class="bigspacer"></div>
 {% for member in sorted_members %}
-  {% if member.alum == true %}
-    <div class="row">
-      <div class="col-md-12 memberbox">
-        <div class="media">
-          <!-- Remove the link from alumni -->
-          <img class="media-object member-photo" src="{{ member.image }}">
-          <div class="media-body">
-            <div class="head media-heading member-name">{{ member.title }}</div>
-            <p class="note">{{ member.position }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  {% endif %}
+{% if member.alum == true %}
+	<div class="media">
+	  <!-- Remove the link from alumni -->
+	  <div class="media-body">
+		<div class="head media-heading member-name">
+		 &bull; {{ member.title }} <span class="note">{{ member.position }}</span>
+		</div>
+		<p class="note">{{ member.note }}</p>
+	  </div>
+	</div>
+{% endif %}
 {% endfor %}

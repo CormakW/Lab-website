@@ -2,11 +2,12 @@
 layout: member
 title: "Pedro Henrique Wink Reis"
 category: Graduate Student
-position: Ph.D. in Chemical Engineering
+position: Ph.D. Student in Chemical Engineering (co-advised Orlin Velev)
 nickname: Pedro
-handle: 
-email: 
+handle: Pedro
+email: pwinkre@ncsu.edu
 twitter: 
+linkedin: pedrohwr
 github: 
 scholar: 
 image: /assets/images/team/pedro.jpg

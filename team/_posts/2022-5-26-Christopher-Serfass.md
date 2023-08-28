@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "Ashika Verma"
+title: "Christopher Serfass"
 category: member
 position: 
-nickname: new
+nickname:
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: 
+image:
 cv: 
 alum: true
 ---

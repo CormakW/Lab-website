@@ -3,14 +3,15 @@ layout: member
 title: "Pallav Jani"
 category: Graduate Student
 position: Ph.D. Student in Chemical Engeering (co-advised with Saad Khan)
-nickname: Pallav
+nickname: Paul
 handle: Pallav
 email: pkjani@ncsu.edu
-twitter: 
+twitter:  
 github: 
-scholar: 
+scholar: Hjg4ATMAAAAJ&hl=en&oi=ao
+linkedin: pallavjani
 image: /assets/images/team/pallav.jpg
-cv: 
+cv: /assets/pdfs/Jani_CV.pdf
 alum: false
 ---
 

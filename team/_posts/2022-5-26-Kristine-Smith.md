@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "Ashika Verma"
+title: "Kristine Smith"
 category: member
-position: 
-nickname: new
+position: Bristol-Myers Squibb
+nickname:
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: 
+image:
 cv: 
 alum: true
 ---

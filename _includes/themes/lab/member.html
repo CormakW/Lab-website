@@ -64,7 +64,19 @@
 			<a class="off" href="https://github.com/{{ member.github }}" target="_blank">{{ member.github }}</a>
 		</div>		
 		<div class="bigspacer"></div>	
-		{% endif %}		
+		{% endif %}
+		{% if member.linkedin %}
+			<div class="smallhead">
+              LinkedIn
+            </div>
+            <div class="spacer"></div>
+            <div class="pad-left note">
+             <!-- <div class="smallspacer"></div> -->
+             <i class="fa fa-linkedin-square fa-fw"></i>
+             <a class="off" href="https://www.linkedin.com/in/{{ member.linkedin }}" target="_blank">LinkedIn</a>
+            </div>
+            <div class="bigspacer"></div>
+        {% endif %}		
 		{% if member.scholar %}
 		<div class="smallhead">
 			Google Scholar
@@ -113,7 +125,7 @@
 					{% if paper.embargo %}
 					<p>{{ paper.title }}
 					{% else %}
-					<p style="color:green"><a href="{{ paper.url }}" class="off" target="_blank">{{ paper.title }}</a>
+					<p style="color:firebrick"><a href="{{ paper.pdflink }}" class="off" target="_blank">{{ paper.title }}</a>
 					{% endif %}
 				{% endif %}
 			{% endfor %}

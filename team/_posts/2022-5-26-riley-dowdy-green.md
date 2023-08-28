@@ -9,9 +9,10 @@ email: redowdyg@ncsu.edu
 twitter: 
 github: 
 scholar: 
+linkedin: riley-dowdy-green-7567b515b
 image: /assets/images/team/riley.jpg
 cv: 
 alum: false
 ---
 
-We are currently recruiting motivated, creative, and curiosity-driven scientists to join our growing team. Visit [this page](/join) to get started.
+Working on nanoemulsion-laden hydrogels for the diffusion of active ingredients.

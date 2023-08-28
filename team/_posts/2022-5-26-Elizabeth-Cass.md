@@ -1,15 +1,15 @@
 ---
 layout: member
-title: "Ashika Verma"
+title: "Elizabeth Cass"
 category: member
-position: 
-nickname: new
+position: Regeneron
+nickname:
 handle: 
 email: 
 twitter: 
 github: 
 scholar: 
-image: 
+image:
 cv: 
 alum: true
 ---
