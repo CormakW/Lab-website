@@ -12,7 +12,7 @@ authors: "Lilian C. Hsiao, Benjamin A. Schultz, Jens Glaser, Michael Engel, Mega
 image: /assets/images/papers/quiet-swimming.png
 fulltext: https://www.nature.com/articles/ncomms9507
 pdf: 
-pdflink:
+pdflink: https://www.nature.com/articles/ncomms9507
 github: 
 pmid: 
 pmcid: 

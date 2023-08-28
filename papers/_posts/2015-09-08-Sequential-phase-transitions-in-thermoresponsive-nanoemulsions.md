@@ -12,7 +12,7 @@ authors: "Lilian C. Hsiao and Patrick S. Doyle"
 image: 
 fulltext: https://pubs.rsc.org/en/content/articlepdf/2015/sm/c5sm01581b
 pdf: 
-pdflink:
+pdflink: https://pubs.rsc.org/en/content/articlepdf/2015/sm/c5sm01581b
 github: 
 pmid: 
 pmcid: 

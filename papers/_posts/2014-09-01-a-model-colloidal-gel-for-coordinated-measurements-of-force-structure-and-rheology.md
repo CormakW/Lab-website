@@ -12,7 +12,7 @@ authors: "L. C. Hsiao, K. A. Whitaker, M. J. Solomon & E. M. Furst"
 image: /assets/images/papers/non-coalescence.png
 fulltext: https://pubs.aip.org/sor/jor/article/58/5/1485/241861/A-model-colloidal-gel-for-coordinated-measurements
 pdf: 
-pdflink: 
+pdflink: https://pubs.aip.org/sor/jor/article/58/5/1485/241861/A-model-colloidal-gel-for-coordinated-measurements
 github: 
 pmid: 
 pmcid: 
